@@ -299,7 +299,7 @@
 .container {
   width:1200px;
  /* border: 2px dashed red;*/
-  margin:0;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -315,6 +315,10 @@
   height: 80px;
   left: 0px;
   top: 0px;
+
+}
+
+.page-header {
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -329,10 +333,7 @@
 
 .agency-motto {
   padding-top: 0px;
-}
-
-.section-lorem{
-  padding-top: 0px;
+  background: #2F303A;
 }
 
 .section-doing{
@@ -342,6 +343,7 @@
 .section-team{
   padding-top: 0px;
   padding-bottom: 0px;
+  background: #F5F4FA;
 }
 
 .section-button {
@@ -350,6 +352,10 @@
 
 .section-project{
   padding-top: 0px;
+}
+
+.page-footer{
+  background: #2F303A;
 }
 
 .section-team .container{
@@ -420,5 +426,5 @@
   border: 1px solid #EEEEEE;
   background: #ffffff;
   text-align: left;
-  flex-basis: calc((100%-60px)/3);
+  flex-basis: calc((100% - 60px)/3);
 }
