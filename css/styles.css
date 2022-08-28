@@ -11,15 +11,10 @@
     --button-color: #f5f4fa;
   }
 
-.ul,
-.p,
-.figure {
-  margin: 0;
-  padding: 0;
-}
-
-
-
+  ul, p, figure, h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding: 0;
+    }
 
   body {
     font-family: "Roboto", "Raleway", sans-serif;
@@ -169,7 +164,7 @@
     letter-spacing: 0.03em;
     color: var(--dark-gray-color);
     margin: 0;
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .doing_img-list{
@@ -189,6 +184,8 @@
     line-height: 1.1875;
     letter-spacing: 0.03em;
     color: var(--dark-gray-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-role{
@@ -196,11 +193,13 @@
     line-height: 1.1875;
     letter-spacing: 0.03em;
     color: var(--light-grey-color);
+    margin: 0;
 }
 
 .portfolio-button-list{
   list-style-type: none;
 }
+
 
 .portfolio-button{
     font-family: "Roboto";
@@ -256,7 +255,6 @@
 }
 
 .footer-address{
-    background: #2F303A;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -269,6 +267,7 @@
 .footer-place{
     color: var(--white-color);
 }
+
 
 .footer-mail:hover,
 .footer-mail:active{
@@ -293,6 +292,7 @@
   width:1200px;
   border: 2px dashed red;
   margin:0;
+  padding: 0 15px;
 }
 
 .section{
@@ -332,6 +332,12 @@
 
 .section-team{
   padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.section-team .container{
+  padding-top: 0px;
+  background: #F5F4FA;
 }
 
 .container .lorem-list{
@@ -347,6 +353,7 @@
 
 .container .team_img-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .team-card {
@@ -359,4 +366,32 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  margin-bottom: 94px;
+}
+
+.page-footer .container{
+  background: #2F303A;
+  height: 252px;
+  padding-top: 60px;
+}
+
+.page-footer .container > address {
+  padding-top: 20px;
+}
+
+
+.container .address-list{
+  display: flex;
+  height: 81px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container .portfolio-button-list{
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-button-list:not(:last-child) {
+  margin-right: 8px;
 }
