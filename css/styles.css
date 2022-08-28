@@ -11,6 +11,16 @@
     --button-color: #f5f4fa;
   }
 
+.ul,
+.p,
+.figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
   body {
     font-family: "Roboto", "Raleway", sans-serif;
     color: var(--dark-gray-color);
