@@ -80,7 +80,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin-left: 371px;
+    margin-left: auto;
     width: 295px;
     font-weight: 500;
     font-size: 14px;
@@ -250,7 +250,6 @@
     letter-spacing: 0.06em;
     color: var(--dark-gray-color);
     margin-left: 24px;
-    margin-top: 20px;
 }
 
 .project-type{
@@ -259,7 +258,6 @@
     letter-spacing: 0.03em;
     color: var(--light-grey-color);
     margin-left: 24px;
-    margin-bottom: 20px;
 }
 
 .footer-address{
@@ -341,8 +339,6 @@
 }
 
 .section-team{
-  padding-top: 0px;
-  padding-bottom: 0px;
   background: #F5F4FA;
 }
 
@@ -389,19 +385,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  margin-bottom: 94px;
 }
 
 .page-footer .container{
   background: #2F303A;
-  height: 252px;
+  padding-bottom: 60px;
   padding-top: 60px;
 }
 
 .page-footer .container > address {
   padding-top: 20px;
 }
-
 
 .container .address-list{
   display: flex;
@@ -419,12 +413,15 @@
   margin-right: 0px;
 }
 
-
 .project-card{
   width: 370px;
-  height: 404px;
-  border: 1px solid #EEEEEE;
   background: #ffffff;
   text-align: left;
   flex-basis: calc((100% - 60px)/3);
+}
+
+.project-desc {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EEEEEE;
 }
