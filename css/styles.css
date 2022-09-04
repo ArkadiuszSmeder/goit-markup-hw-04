@@ -221,6 +221,11 @@
     margin-right: 8px;
 }
 
+.portfolio-button:hover,
+.portfolio-button:focus{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .portfolio-button-big{
     width: 121px;
 }
@@ -317,7 +322,6 @@
   height: 80px;
   left: 0px;
   top: 0px;
-
 }
 
 .page-header {
@@ -365,6 +369,7 @@
 
 .page-footer{
   background: #2F303A;
+  display: block;
 }
 
 .section-team .container{
@@ -401,12 +406,13 @@
 }
 
 .page-footer .container{
+  display: flex;
   background: #2F303A;
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
-.page-footer .container > address {
+.page-footer .container > .footer-box > address{
   padding-top: 20px;
 }
 
@@ -415,6 +421,12 @@
   height: 81px;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.footer-box {
+  display: block;
+  width: 246px;
+  margin-right: 70px;
 }
 
 .container .portfolio-button-list{
@@ -433,6 +445,11 @@
   flex-basis: calc((100% - 60px)/3);
 }
 
+.project-card:hover,
+.project-card:focus{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .project-desc {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -448,7 +465,7 @@
 .envelope {
   margin-right: 10px;
   width:16px;
-  height:10px;
+  height:12px;
 }
 
 .envelope:hover,
@@ -495,18 +512,37 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--white-color);
+  fill:#AFB1B8;
 }
 
-.socialmedia-icon:hover,
-.socialmedia-icon:focus {
+/*Dodane po konsultacji---------------------------------------------------------------------------*/
+
+.social__media-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  gap: 10px;
   border-radius: 50%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--blue-color);
-  fill:var(--white-color);
-  transition: 0.3s;
+  background-color: var(--white-color);
+  fill:#AFB1B8;
 }
+
+.socialmedia-icon:hover svg,
+.socialmedia-icon:focus svg{
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  fill: var(--white-color);
+}
+
+/*koniec dodania-------------------------------------------------------------------------------------*/
 
 .client-box {
   width: 170px;
@@ -524,4 +560,54 @@
 
 .icons-client:hover path{
 fill:var(--blue-color);
+}
+
+.client-box:hover,
+.client-box:focus {
+  border: 1px solid var(--blue-color);
+}
+
+.social-footer {
+  display: block;
+  padding-top: 12px;
+}
+
+.join {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.social-footer-box {
+  display: flex;
+  flex-direction: row;
+  height: 44px;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.social-footer-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  gap: 10px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-footer-icon:hover,
+.social-footer-icon:focus {
+  background-color: var(--blue-color);
+  fill:var(--white-color);
 }
