@@ -328,9 +328,9 @@
   background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.4) 0%,
-    rgba(47, 48, 58, 0.4) 100%
+    rgba(47, 48, 58, 0.4) 100%,
   );
-  background-image: url(/images/Banner.jpg);
+  background-image: url(../images/Banner.jpg);
   background-position: center;
 }
 
@@ -340,11 +340,6 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4) 0%,
-    rgba(47, 48, 58, 0.4) 100%
-  );
 }
 
 
@@ -442,7 +437,6 @@
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
 }
-
 
 
 
