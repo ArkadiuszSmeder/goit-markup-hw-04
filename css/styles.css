@@ -124,14 +124,13 @@
 
 .motto{
     color:var(--white-color);
-    background: #2F303A;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-top: 200px;
+    padding-top: 200px;
     margin-bottom: 30px;
 }
 
@@ -324,19 +323,31 @@
   border-bottom: 1px solid #ECECEC;
 }
 
+.agency-motto {
+  padding-top: 0px;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4) 0%,
+    rgba(47, 48, 58, 0.4) 100%
+  );
+  background-image: url(/images/Banner.jpg);
+  background-position: center;
+}
+
 .agency-motto .container {
   display: flex;
-  background: #2F303A;
   height: 600px;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4) 0%,
+    rgba(47, 48, 58, 0.4) 100%
+  );
 }
 
-.agency-motto {
-  padding-top: 0px;
-  background: #2F303A;
-}
+
 
 .section-doing{
   padding-top: 0px;
@@ -430,4 +441,12 @@
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
+}
+
+
+
+
+.icon-header {
+  margin-right: 10px;
+  fill: var(--light-grey-color);
 }
