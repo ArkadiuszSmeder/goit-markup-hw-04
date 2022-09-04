@@ -21,6 +21,10 @@
     color: var(--dark-gray-color);
   }
 
+  img{
+    display: block;
+  }
+
   /*a {
     text-decoration: none;
   }*/
@@ -426,5 +430,4 @@
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
-  margin-top: -4px;
 }
