@@ -101,8 +101,9 @@
   }
 
   .contact-list:hover,
-  .contact-list:focus{
-    color:var(--blue-color); 
+  .contact-listfocus{
+    color:var(--blue-color);
+    fill:var(blue);
   }
 
 .order-button{
@@ -466,17 +467,14 @@
   margin-right: 10px;
   width:16px;
   height:12px;
-}
-
-.envelope:hover,
-.envelope:focus {
-  color:var(--blue-color);
+  fill: currentColor;
 }
 
 .smartphone {
   margin-right: 10px;
   width:10px;
   height:16px;
+  fill: currentColor;
 }
 
 .lorem-box {
@@ -550,6 +548,7 @@
   background: var(--white-color);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  fill:#AFB1B8;
 }
 
 .icons-client{
@@ -565,6 +564,7 @@ fill:var(--blue-color);
 .client-box:hover,
 .client-box:focus {
   border: 1px solid var(--blue-color);
+  fill: var(--blue-color);
 }
 
 .social-footer {
@@ -604,6 +604,7 @@ fill:var(--blue-color);
   background-position: center;
   background-repeat: no-repeat;
   background: rgba(255, 255, 255, 0.1);
+  fill:var(--white-color);
 }
 
 .social-footer-icon:hover,
